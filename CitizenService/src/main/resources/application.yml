@@ -1,0 +1,17 @@
+
+server:
+     port: 8081
+
+spring:
+    datasource:
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        password: managerm
+        url: jdbc:oracle:thin:@localhost:1521:orcl
+        username: system
+    jpa:
+        database-platform: org.hibernate.dialect.OracleDialect
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+    application: 
+           name: CITIZEN-SERVICE
